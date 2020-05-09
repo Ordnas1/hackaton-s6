@@ -1,0 +1,318 @@
+@font-face {
+  font-family: 'Arial';
+  src: url(../fonts/ArialUnicodeMS.ttf);
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url(../fonts/Helvetica400.ttf);
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 5%;
+  height: 100px;
+}
+
+.navbar__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  width: 25%;
+  padding: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar__listelem {
+  margin: 0 1%;
+}
+
+.navbar__link {
+  text-decoration: none;
+  font-size: 1.25em;
+  color: black;
+  font-family: "Helvetica", sans-serif;
+}
+
+.navbar__link--current {
+  color: #1F3F68;
+  font-weight: 600;
+}
+
+.main-header {
+  background-image: url(../images/MaskGroup.svg);
+  height: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 15%;
+}
+
+.main-header__title {
+  font-family: "Arial", sans-serif;
+  font-size: 2.75rem;
+  text-align: center;
+  color: white;
+}
+
+.main-header__text {
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.main-doc {
+  margin: 0 15%;
+}
+
+.main-doc__searchbar {
+  width: 100%;
+  margin: 10% auto;
+  border-radius: 10px;
+  background-color: #F4F4F4;
+  height: 56px;
+  border: none;
+  padding-left: 5%;
+}
+
+.main-doc__title {
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.25rem;
+  line-height: 23px;
+  /* identical to box height */
+  letter-spacing: 0.04em;
+  /* blue_03 */
+  color: #356EAD;
+  opacity: 0.8;
+}
+
+.pop-article {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  gap: 0 10px;
+}
+
+.pop-article__element {
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  grid-row-end: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.pop-article__element--emphasis {
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 2;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 4;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.pop-article__img {
+  margin: auto;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.pop-article__img--emphasis {
+  margin: 0 1%;
+}
+
+.pop-article__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.pop-article__title {
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.375rem;
+  line-height: 2.875rem;
+  letter-spacing: 0.04em;
+  color: #1F3F68;
+}
+
+.pop-article__title--emphasis {
+  font-size: 2.25rem;
+}
+
+.pop-article__paragraph {
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  /* or 162% */
+  letter-spacing: 0.04em;
+  color: #000000;
+  opacity: 0.6;
+}
+
+.pop-article__author {
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  /* identical to box height, or 171% */
+  letter-spacing: 0.04em;
+  /* Blue_01 */
+  color: #1F3F68;
+}
+
+.pop-article__datetime {
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  /* identical to box height, or 171% */
+  letter-spacing: 0.04em;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.all-article__element {
+  margin: 1% 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.all-article__img {
+  margin: auto;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-right: 3%;
+}
+
+.all-article__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.all-article__title {
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.375rem;
+  line-height: 2.875rem;
+  letter-spacing: 0.04em;
+  color: #1F3F68;
+  margin: 0;
+}
+
+.all-article__title--emphasis {
+  font-size: 2.25rem;
+}
+
+.all-article__paragraph {
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.04em;
+  color: #000000;
+  opacity: 0.6;
+  margin: 0;
+}
+
+.all-article__footer {
+  margin-top: 2%;
+}
+
+.all-article__author {
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  /* identical to box height, or 171% */
+  letter-spacing: 0.04em;
+  /* Blue_01 */
+  color: #1F3F68;
+}
+
+.all-article__datetime {
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  /* identical to box height, or 171% */
+  letter-spacing: 0.04em;
+  color: rgba(0, 0, 0, 0.4);
+}
+/*# sourceMappingURL=styles.css.map */

@@ -3,10 +3,213 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
     <title>Hackathon 6</title>
 </head>
 <body>
     <!--Construido con OOCSS Y BEM -->
-    
+    <nav class="navbar">
+        <img src="./images/LOGO.png" alt="" class="navbar__logo">
+        <ul class="navbar__list">
+            <li class="navbar__listelem"><a href="" class="navbar__link navbar__link--current">Home</a></li>
+            <li class="navbar__listelem"><a href="" class="navbar__link">Espectaculo</a></li>
+            <li class="navbar__listelem"><a href="" class="navbar__link">Deportes</a></li>
+        </ul>
+    </nav>
+    <header class="main-header">
+        <h1 class="main-header__title">Blog Afrianska</h1>
+        <p class="main-header__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </header>
+    <main class="main-doc">
+        <input type="text" name="" id="" class="main-doc__searchbar" placeholder="Enter search...">
+        <h2 class="main-doc__title">Popular</h2>
+        <section class="pop-article">
+            <div class="pop-article__element pop-article__element--emphasis">
+                <img src="images/img-post-1.png" alt="" class="pop-article__img pop-article__img--emphasis">
+                <article class="pop-article__text">
+                    <h3 class="pop-article__title pop-article__title--emphasis">Feugiat sodales at nullam tellus.</h3>
+                    <p class="pop-article__paragraph">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi posuere nibh tempor fringilla porta pellentesque ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                    </p>
+                    <footer class="pop-article__footer">
+                        <section class="pop-article__info">
+                            <h4 class="pop-article__author">Samatha Leuthex</h4>
+                            <p class="pop-article__datetime">May 5, 3 min read</p>
+                        </section>
+                        <section class="pop-article__share"></section>
+                    </footer>
+                </article>
+            </div>
+            <div class="pop-article__element">
+                <img src="images/img-post-2.png" alt="" class="pop-article__img">
+                <article class="pop-article__text">
+                    <h3 class="pop-article__title">Porta proin tellus sed pulvinar odio eu pulvinar.</h3>
+                    <p class="pop-article__paragraph">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                    <footer class="pop-article__footer">
+                        <section class="pop-article__info">
+                            <h4 class="pop-article__author">Samatha Leuthex</h4>
+                            <p class="pop-article__datetime">May 5, 3 min read</p>
+                        </section>
+                        <section class="pop-article__share"></section>
+                    </footer>
+                </article>
+            </div>
+            <div class="pop-article__element">
+                <img src="images/img-post-3.png" alt="" class="pop-article__img">
+                <article class="pop-article__text">
+                    <h3 class="pop-article__title">Non quam tortor, proin eu egestas scelerisque.</h3>
+                    <p class="pop-article__paragraph">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    </p>
+                    <footer class="pop-article__footer">
+                        <section class="pop-article__info">
+                            <h4 class="pop-article__author">Samatha Leuthex</h4>
+                            <p class="pop-article__datetime">May 5, 3 min read</p>
+                        </section>
+                        <section class="pop-article__share"></section>
+                    </footer>
+                </article>
+            </div>
+            <div class="pop-article__element">
+                <img src="images/img-post-31.png" alt="" class="pop-article__img">
+                <article class="pop-article__text">
+                    <h3 class="pop-article__title">Amet amet sed pharetra risus sit eget interdum.</h3>
+                    <p class="pop-article__paragraph">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    </p>
+                    <footer class="pop-article__footer">
+                        <section class="pop-article__info">
+                            <h4 class="pop-article__author">Samatha Leuthex</h4>
+                            <p class="pop-article__datetime">May 5, 3 min read</p>
+                        </section>
+                        <section class="pop-article__share"></section>
+                    </footer>
+                </article>
+            </div>
+        </section>
+        <hr>
+        <h2 class="main-doc__title">All articles</h2>
+        <section class="all-article">
+            <div class="all-article__element">
+                <img src="images/img-post-4.png" alt="" class="all-article__img">
+                <article class="all-article__text">
+                    <h3 class="all-article__title">Massa eu in laoreet enim augue vulputate nunc.</h3>
+                    <p class="all-article__paragraph">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus quisque magna in nisl nibh bibendum ipsum, elit duis. Donec.
+                    </p>
+                    <footer class="all-article__footer">
+                        <section class="all-article__info">
+                            <h4 class="all-article__author">Samatha Leuthex</h4>
+                            <p class="all-article__datetime">May 5, 3 min read</p>
+                        </section>
+                        <section class="all-article__share"></section>
+                    </footer>
+                </article>
+            </div>
+            <div class="all-article__element">
+                <img src="images/img-post-5.png" alt="" class="all-article__img">
+                <article class="all-article__text">
+                    <h3 class="all-article__title">Massa eu in laoreet enim augue vulputate nunc.</h3>
+                    <p class="all-article__paragraph">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus quisque magna in nisl nibh bibendum ipsum, elit duis. Donec.
+                    </p>
+                    <footer class="all-article__footer">
+                        <section class="all-article__info">
+                            <h4 class="all-article__author">Samatha Leuthex</h4>
+                            <p class="all-article__datetime">May 5, 3 min read</p>
+                        </section>
+                        <section class="all-article__share"></section>
+                    </footer>
+                </article>
+            </div>
+            <div class="all-article__element">
+                <img src="images/img-post-6.png" alt="" class="all-article__img">
+                <article class="all-article__text">
+                    <h3 class="all-article__title">Massa eu in laoreet enim augue vulputate nunc.</h3>
+                    <p class="all-article__paragraph">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus quisque magna in nisl nibh bibendum ipsum, elit duis. Donec.
+                    </p>
+                    <footer class="all-article__footer">
+                        <section class="all-article__info">
+                            <h4 class="all-article__author">Samatha Leuthex</h4>
+                            <p class="all-article__datetime">May 5, 3 min read</p>
+                        </section>
+                        <section class="all-article__share"></section>
+                    </footer>
+                </article>
+            </div>
+            <div class="all-article__element">
+                <img src="images/img-post-7.png" alt="" class="all-article__img">
+                <article class="all-article__text">
+                    <h3 class="all-article__title">Massa eu in laoreet enim augue vulputate nunc.</h3>
+                    <p class="all-article__paragraph">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus quisque magna in nisl nibh bibendum ipsum, elit duis. Donec.
+                    </p>
+                    <footer class="all-article__footer">
+                        <section class="all-article__info">
+                            <h4 class="all-article__author">Samatha Leuthex</h4>
+                            <p class="all-article__datetime">May 5, 3 min read</p>
+                        </section>
+                        <section class="all-article__share"></section>
+                    </footer>
+                </article>
+            </div>
+            <div class="all-article__element">
+                <img src="images/img-post-8.png" alt="" class="all-article__img">
+                <article class="all-article__text">
+                    <h3 class="all-article__title">Massa eu in laoreet enim augue vulputate nunc.</h3>
+                    <p class="all-article__paragraph">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus quisque magna in nisl nibh bibendum ipsum, elit duis. Donec.
+                    </p>
+                    <footer class="all-article__footer">
+                        <section class="all-article__info">
+                            <h4 class="all-article__author">Samatha Leuthex</h4>
+                            <p class="all-article__datetime">May 5, 3 min read</p>
+                        </section>
+                        <section class="all-article__share"></section>
+                    </footer>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer class="main-footer">
+        <section class="main-footer__lets-talk">
+            <div class="main-footer__text">
+                <h2 class="main-footer_title">Interested to work with out team?</h2>
+                <p class="main-footer__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+            </div>
+            <button class="main-footer__btn">Lets talk</button>
+        </section>
+        <section class="main-footer__info">
+            <address class="main-footer__contact">
+                <img src="images/logo-footer.png" alt="" class="main-footer__logo">
+                <ul class="main-footer__list">
+                    <li class="main-footer__listelem"><a href="" class="main-footer__link">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></li>
+                    <li class="main-footer__listelem"><a href="" class="main-footer__link">+62-812-7313-4321</a></li>
+                    <li class="main-footer__listelem"><a href="" class="main-footer__link">hello.afrian@gmail.com</a></li>
+                </ul>
+            </address>
+            <section class="main-footer__about-us">
+                <h2 class="main-footer__title">About US</h2>
+                <ul class="main-footer__list">
+                    <li class="main-footer__listelem"><a href="" class="main-footer__link">About</a></li>
+                    <li class="main-footer__listelem"><a href="" class="main-footer__link">What We Do</a></li>
+                    <li class="main-footer__listelem"><a href="" class="main-footer__link">Project</a></li>
+                    <li class="main-footer__listelem"><a href="" class="main-footer__link">How It Work With US</a></li>
+                </ul>
+            </section>
+            <section class="main-footer__follow-us">
+                <h2 class="main-footer__title">Follow US</h2>
+                <ul class="main-footer__list">
+                    <li class="main-footer__listelem"><a href="" class="main-footer__link">Instagram</a></li>
+                    <li class="main-footer__listelem"><a href="" class="main-footer__link">Facebook</a></li>
+                    <li class="main-footer__listelem"><a href="" class="main-footer__link">LinkedIn</a></li>
+                    <li class="main-footer__listelem"><a href="" class="main-footer__link">Youtube</a></li>
+                </ul>
+            </section>
+        </section>
+    </footer>
 </body>
 </html>
